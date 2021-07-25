@@ -1,11 +1,12 @@
 {
   "name": "wedding-next-backend",
   "version": "3.0.0",
+  "description": "Frontend of Riley and Jessica's Wedding Site Version 3",
   "private": false,
   "author": "Riley Cravens",
   "license": "ISC",
   "scripts": {
-    "dev": "keystone-next",
+    "dev": "keystone-next"
   },
   "eslintConfig": {
     "extends": "wesbos/typescript.js",
