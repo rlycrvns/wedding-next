@@ -5,21 +5,49 @@ import Header from './Header';
 const GlobalStyles = createGlobalStyle`
 
   @font-face {
-    font-family: 'radnika_next';
-    src: url('/static/radnikanext-medium-webfont.woff2') format('woff2');
+    font-family: 'HeadingCursive';
+    src: url('../assets/fonts/LaBelleAurore-Regular.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'HeadingReg';
+    src: url('../assets/fonts/JuliusSansOne-Regular.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Body';
+    src: url('../assets/fonts/Raleway-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
   }
+  @font-face {
+    font-family: 'BodyBold';
+    src: url('../assets/fonts/Raleway-SemiBold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'BodyLight';
+    src: url('../assets/fonts/Raleway-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+  }
   html {
-    --red: #ff0000;
-    --black: #393939;
-    --grey: #3A3A3A;
-    --lightGrey: #E1E1E1;
-    --offWhite: #ededed;
-    --maxWidth: 1000px;
-    --bs: 0 12px 24px 0 rgba(0,0,0,0.2);
+    --black: #2E2E2E;
+    --white: #fff;
+    --bg: #fff5f4;
+    --rust: #cd6647;
+    --pale-green: #c4d0cc;
+    --pink: #fee5e0;
+    --green: #718878;
+    --grey: #707070;
+    --pale-green-alpha: rgba(196, 208, 204, 0.5);
+    --pink-alpha: rgba(254, 229, 224, 0.5);
     box-sizing: border-box;
     font-size: 62.5%;
+    background: var(--bg);
   }
   *, *::before, *:after {
     box-sizing: inherit;
@@ -30,6 +58,10 @@ const GlobalStyles = createGlobalStyle`
     margin: 0;
     font-size: 1.5rem;
     line-height: 2;
+    overflow-x: hidden;
+  }
+  main {
+    margin-bottom: 20rem;
   }
   a {
     text-decoration: none;
@@ -39,7 +71,14 @@ const GlobalStyles = createGlobalStyle`
     text-decoration: underline;
   }
   button {
-    font-family: 'radnika_next', --apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: var(--pink);
+    color: black;
+    border: 2px solid var(--green);
+    padding: 0.6rem 1rem;
+    border-radius: 2.5rem;
+    box-shadow: 0px 0px 8px 1px var(--black);
+    cursor: pointer;
+    transition: all 0.2s;
   }
 `;
 
