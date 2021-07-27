@@ -1,6 +1,6 @@
 import { PropTypes } from 'prop-types';
 import styled, { createGlobalStyle } from 'styled-components';
-import Header from './Header';
+import Header from './ui/Header';
 
 const GlobalStyles = createGlobalStyle`
 
@@ -45,6 +45,7 @@ const GlobalStyles = createGlobalStyle`
     --grey: #707070;
     --pale-green-alpha: rgba(196, 208, 204, 0.5);
     --pink-alpha: rgba(254, 229, 224, 0.5);
+    --maxWidth: 1800px;
     box-sizing: border-box;
     font-size: 62.5%;
     background: var(--bg);
@@ -59,9 +60,6 @@ const GlobalStyles = createGlobalStyle`
     font-size: 1.5rem;
     line-height: 2;
     overflow-x: hidden;
-  }
-  main {
-    margin-bottom: 20rem;
   }
   a {
     text-decoration: none;
