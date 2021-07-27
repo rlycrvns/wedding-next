@@ -47,11 +47,6 @@ export default withAuth(
     db: {
       adapter: 'mongoose',
       url: databaseURL,
-      async onConnect(keystone) {
-        if (process.argv.includes('--seed-data')) {
-          await insertSeedData(keystone);
-        }
-      },
     },
     lists: createSchema({
       // schema items go in here
